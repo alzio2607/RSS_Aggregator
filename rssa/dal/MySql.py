@@ -14,5 +14,10 @@ class MySql:
         df = pd.read_sql(query, con=self.connection)
         return df
 
+    def read_latest_ts(self, tablename):
+        query = "select * from {} where ts = (select MAX(ts) from {})".format(tablename, tablename)
+        df = pd.read_sql(query, con=self.connection)
+        return df
+
     def write(self, df, tablename):
         df.to_sql(name=tablename, con=self.connection, index=False, if_exists='append')

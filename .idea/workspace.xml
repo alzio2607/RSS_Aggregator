@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15ae9c43-6796-45d7-8fad-ddac373e9cff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rssa/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rssa/content/Fetcher.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rssa/content/Updater.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rssa/content/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rssa/dal/MySql.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rssa/dal/Rss.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rssa/dal/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rssa/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rssa/update_content.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rssa/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rssa/utils/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataCSV/Readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rssa/DataCSV/Readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataCSV/business/1565361191/business_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/rssa/DataCSV/business/1565361191/business_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataCSV/entertainment/1565361191/entertainment_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/rssa/DataCSV/entertainment/1565361191/entertainment_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataCSV/health/1565361191/health_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/rssa/DataCSV/health/1565361191/health_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataCSV/science/1565361191/science_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/rssa/DataCSV/science/1565361191/science_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataCSV/sports/1565361191/sports_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/rssa/DataCSV/sports/1565361191/sports_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataCSV/technology/1565361191/technology_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/rssa/DataCSV/technology/1565361191/technology_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataCSV/trending/1565361191/trending_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/rssa/DataCSV/trending/1565361191/trending_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataCSV/world/1565361191/world_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/rssa/DataCSV/world/1565361191/world_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scrape.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,16 +11,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rssa/dal/Rss.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+            <state relative-caret-position="231">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -53,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rssa/content/Fetcher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+            <state relative-caret-position="168">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -63,15 +40,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rssa/content/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="39" selection-start-column="39" selection-end-column="39" />
+            <state relative-caret-position="21">
+              <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,20 +54,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rssa/content/Updater.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="63">
               <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rssa/test.py">
+        <entry file="file://$PROJECT_DIR$/rssa/content/Processor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+            <state relative-caret-position="21">
+              <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rssa/cluster_content.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rssa/utils/constants.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="80" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -100,17 +93,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rssa/update_content.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="42">
               <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/mysql/connector/connection.py">
+        <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/_strptime.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="395" selection-start-line="395" selection-end-line="395" />
+            <state relative-caret-position="199">
+              <caret line="358" selection-start-line="358" selection-end-line="358" />
             </state>
           </provider>
         </entry>
@@ -118,18 +111,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rssa/dal/MySql.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="378">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rssa/utils/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -159,22 +147,24 @@
         <option value="$PROJECT_DIR$/dal/MySql.py" />
         <option value="$PROJECT_DIR$/rssa/dal/RssParser.py" />
         <option value="$PROJECT_DIR$/rssa/dal/__init__.py" />
-        <option value="$PROJECT_DIR$/rssa/dal/MySql.py" />
-        <option value="$PROJECT_DIR$/rssa/content/__init__.py" />
-        <option value="$PROJECT_DIR$/rssa/utils/constants.py" />
         <option value="$PROJECT_DIR$/rssa/content/Updater.py" />
-        <option value="$PROJECT_DIR$/rssa/dal/Rss.py" />
         <option value="$PROJECT_DIR$/rssa/content/Fetcher.py" />
         <option value="$PROJECT_DIR$/rssa/update_content.py" />
         <option value="$PROJECT_DIR$/rssa/test.py" />
+        <option value="$PROJECT_DIR$/rssa/dal/Rss.py" />
+        <option value="$PROJECT_DIR$/rssa/content/__init__.py" />
+        <option value="$PROJECT_DIR$/rssa/cluster_content.py" />
+        <option value="$PROJECT_DIR$/rssa/dal/MySql.py" />
+        <option value="$PROJECT_DIR$/rssa/utils/constants.py" />
+        <option value="$PROJECT_DIR$/rssa/content/Processor.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="y" value="-12" />
-    <option name="width" value="3026" />
-    <option name="height" value="2026" />
+    <option name="x" value="-14" />
+    <option name="y" value="-14" />
+    <option name="width" value="3028" />
+    <option name="height" value="2028" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -184,6 +174,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -196,11 +187,39 @@
               <item name="RSS_Aggregator" type="462c0819:PsiDirectoryNode" />
               <item name="rssa" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="RSS_Aggregator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RSS_Aggregator" type="462c0819:PsiDirectoryNode" />
+              <item name="rssa" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RSS_Aggregator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RSS_Aggregator" type="462c0819:PsiDirectoryNode" />
+              <item name="rssa" type="462c0819:PsiDirectoryNode" />
+              <item name="dal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RSS_Aggregator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RSS_Aggregator" type="462c0819:PsiDirectoryNode" />
+              <item name="rssa" type="462c0819:PsiDirectoryNode" />
+              <item name="DataCSV" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RSS_Aggregator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RSS_Aggregator" type="462c0819:PsiDirectoryNode" />
+              <item name="rssa" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RSS_Aggregator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RSS_Aggregator" type="462c0819:PsiDirectoryNode" />
+              <item name="use_model" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -212,6 +231,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -230,7 +250,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.cluster_content">
     <configuration name="Fetcher" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RSS_Aggregator" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -244,6 +264,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rssa/content/Fetcher.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cluster_content" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RSS_Aggregator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rssa" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rssa/cluster_content.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -273,8 +314,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="update_content" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RSS_Aggregator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rssa" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rssa/update_content.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.cluster_content" />
+        <item itemvalue="Python.update_content" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.Fetcher" />
       </list>
@@ -294,9 +358,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
+    <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34707904" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15634365" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -305,12 +369,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3714609" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37122735" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993964" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32997987" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -322,17 +386,6 @@
       <window_info anchor="right" id="Maven" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/rssa/dal/MySql.py</url>
-          <line>17</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/rssa/__init__.py">
@@ -352,101 +405,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/feedparser.py">
+    <entry file="file://$PROJECT_DIR$/Scrape.py" />
+    <entry file="file://$PROJECT_DIR$/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/rssa/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="355" selection-start-line="355" selection-end-line="355" />
+        <state>
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Scrape.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/mysql/connector/connection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="65" column="81" lean-forward="true" selection-start-line="36" selection-start-column="2" selection-end-line="65" selection-end-column="81" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rssa/utils/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="78" selection-start-line="5" selection-start-column="78" selection-end-line="5" selection-end-column="78" />
+        <state>
+          <caret line="395" selection-start-line="395" selection-end-line="395" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rssa/utils/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/mysql/connector/connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="395" selection-start-line="395" selection-end-line="395" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rssa/content/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="39" selection-start-column="39" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rssa/dal/Rss.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rssa/dal/MySql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rssa/content/Updater.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="63">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/_strptime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="358" selection-start-line="358" selection-end-line="358" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rssa/content/Fetcher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        <state relative-caret-position="168">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/feedparser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="3816" selection-start-line="3816" selection-end-line="3816" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rssa/dal/Rss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rssa/content/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rssa/update_content.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="42">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rssa/test.py">
+    <entry file="file://$PROJECT_DIR$/rssa/dal/MySql.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        <state relative-caret-position="378">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rssa/cluster_content.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rssa/utils/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="80" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rssa/content/Processor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
