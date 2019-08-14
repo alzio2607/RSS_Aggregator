@@ -1,0 +1,1 @@
+from rssa.content.Updater import update
