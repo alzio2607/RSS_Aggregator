@@ -15,11 +15,10 @@ def get_graph(df):
     df = df.reset_index(drop=True)
     with tf.Session() as sess:
         sess.run([tf.global_variables_initializer(), tf.tables_initializer()])
-        embeddings_tf = use_module(df['text'].valu
+        embeddings_tf = use_module(df['text'].values)
         embeddings = sess.run(embeddings_tf)
     similarities = cos_sim(embeddings)
-    edges = np.argwhere(similarities >= SIMILARITY
-        _THRESHOLD)
+    edges = np.argwhere(similarities >= SIMILARITY_THRESHOLD)
     graph = {i:[] for i in range(len(df))}
     for x in edges:
         if x[0] != x[1]:

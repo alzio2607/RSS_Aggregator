@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15ae9c43-6796-45d7-8fad-ddac373e9cff" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rssa/content/Processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/rssa/content/Processor.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,20 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rssa/content/Updater.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rssa/content/Processor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+            <state relative-caret-position="105">
+              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -185,36 +176,13 @@
             <path>
               <item name="RSS_Aggregator" type="b2602c69:ProjectViewProjectNode" />
               <item name="RSS_Aggregator" type="462c0819:PsiDirectoryNode" />
-              <item name="rssa" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RSS_Aggregator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RSS_Aggregator" type="462c0819:PsiDirectoryNode" />
-              <item name="rssa" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RSS_Aggregator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RSS_Aggregator" type="462c0819:PsiDirectoryNode" />
-              <item name="rssa" type="462c0819:PsiDirectoryNode" />
-              <item name="dal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RSS_Aggregator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RSS_Aggregator" type="462c0819:PsiDirectoryNode" />
-              <item name="rssa" type="462c0819:PsiDirectoryNode" />
-              <item name="DataCSV" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RSS_Aggregator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RSS_Aggregator" type="462c0819:PsiDirectoryNode" />
-              <item name="rssa" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="use_model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RSS_Aggregator" type="b2602c69:ProjectViewProjectNode" />
               <item name="RSS_Aggregator" type="462c0819:PsiDirectoryNode" />
               <item name="use_model" type="462c0819:PsiDirectoryNode" />
+              <item name="variables" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -360,7 +328,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15634365" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24225774" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -506,10 +474,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/use_model/variables/variables.data-00000-of-00001">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state>
+          <caret column="38" lean-forward="true" selection-start-column="36" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/rssa/content/Processor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+        <state relative-caret-position="105">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
