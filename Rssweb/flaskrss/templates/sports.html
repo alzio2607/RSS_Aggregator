@@ -1,0 +1,35 @@
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+    <meta charset="UTF-8">
+    <title>Employees</title>
+    {% if result %}
+<table id="employees" style="width:100%"><tbody><tr>
+        <th>Title</th>
+        <th>Summary</th>
+        <th>ThumbLink</th>
+    </tr><tr>
+
+    {% for row in result %}
+    {%for content in row%}
+<table id="employees" style="width:100%"><tbody><tr>
+        <td> {{ content.title }}</td>
+        <td> {{ content.summary }}</td>
+        <td> {{ content.thumbnail_link }}</td>
+    </tr></tbody></table>
+    {% endfor %}
+    {% endfor %}
+
+    {% endif %}
