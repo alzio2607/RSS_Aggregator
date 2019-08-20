@@ -1,11 +1,13 @@
-from rssa.dal import MySql
+from itertools import repeat
+
+from rssa.dal import MySql, Thumbnail
 from rssa.utils.constants import *
 import tensorflow as tf
 import tensorflow_hub as hub
 from sklearn.metrics.pairwise import cosine_similarity as cos_sim
 import numpy as np
 import pandas as pd
-
+from multiprocessing import Pool
 def get_graph(df):
     embeddings = None
     use_module = hub.Module(USE_MODEL_PATH)
@@ -44,25 +46,34 @@ def get_connected_components(graph):
             cc.append(temp)
     return cc
 
+def process_component(df):
+    df['publish_ts'] = df['publish_ts'].astype(str)
+    return dict(
+        publish_ts=df['publish_ts'].min(),
+        publisher_count=len(df),
+        ids=','.join(df['id'].values),
+        thumbnail=Thumbnail(df['thumbnail_link'].values).get_blob()
+    )
+
 def get_clusters(components, df):
-    clusters = []
+    chunks = []
     for component in components:
-        cluster = dict()
-        _df = df.iloc[component]
-        cluster['publish_ts'] = _df['publish_ts'].min()
-        cluster['publisher_count'] = len(_df)
-        _df.sort_values(by='publish_ts', ascending=False)
-        cluster['keys'] = ','.join(_df['key'].values)
-        clusters.append(cluster)
+        chunks.append(df.iloc[component].sort_values(by='publish_ts', ascending=False))
+    threadpool = Pool(processes=4)
+    clusters = threadpool.map(process_component, chunks)
     return clusters
 
 def process_category(category):
     sql = MySql()
     df = sql.read_latest_ts(category)
+    print('read done')
     ts = df.iloc[0]['ts']
     graph = get_graph(df)
+    print('graph created')
     components = get_connected_components(graph)
+    print('components identified')
     clusters = get_clusters(components, df)
+    print('clusters made')
     clusterDf = pd.DataFrame(clusters)
     clusterDf['category'] = category
     clusterDf['ts'] = ts
@@ -70,4 +81,6 @@ def process_category(category):
 
 def create_clusters():
     for category in CATEGORIES:
+        print("{} STARTED".format(category))
         process_category(category)
+        print("{} DONE".format(category))

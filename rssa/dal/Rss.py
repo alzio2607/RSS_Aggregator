@@ -31,7 +31,7 @@ def parse_entry(entry, thumbnail_path = None):
                 result['thumbnail_link'] = entry[path[0]][0][path[1]]
     except:
         pass
-    result['key'] = hashlib.md5(json.dumps(result).encode("utf-8")).hexdigest()
+    result['id'] = hashlib.md5(json.dumps(result).encode("utf-8")).hexdigest()
     return result
 
 def read(rss, thumbnail):
