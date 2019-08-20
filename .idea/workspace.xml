@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15ae9c43-6796-45d7-8fad-ddac373e9cff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rssa/dal/Thumbnail.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logodump/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logodump/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logodump/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logodump/dump_logos.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rssweb/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rssa/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rssa/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RSS_Aggregator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RSS_Aggregator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rssweb/flaskrss/flaskdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rssweb/flaskrss/flaskdb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rssweb/flaskrss/templates/sports.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rssweb/flaskrss/templates/sports.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rssa/content/Processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/rssa/content/Processor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rssa/dal/Rss.py" beforeDir="false" afterPath="$PROJECT_DIR$/rssa/dal/Rss.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rssa/dal/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/rssa/dal/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rssa/utils/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/rssa/utils/constants.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +45,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
@@ -47,7 +54,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -66,28 +73,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cluster_content">
-    <configuration name="Fetcher" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="RSS_Aggregator" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rssa/content" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rssa/content/Fetcher.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.flaskdb">
     <configuration name="cluster_content" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RSS_Aggregator" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -109,7 +95,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="dbconnect" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RSS_Aggregator" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -117,11 +103,53 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rssa" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Rssweb/flaskrss" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rssa/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Rssweb/flaskrss/dbconnect.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dump_logos" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RSS_Aggregator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Logodump" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Logodump/dump_logos.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="flaskdb" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RSS_Aggregator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Rssweb/flaskrss" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Rssweb/flaskrss/flaskdb.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,6 +181,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.flaskdb" />
+        <item itemvalue="Python.dbconnect" />
+        <item itemvalue="Python.dump_logos" />
         <item itemvalue="Python.cluster_content" />
         <item itemvalue="Python.update_content" />
       </list>
@@ -183,5 +214,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

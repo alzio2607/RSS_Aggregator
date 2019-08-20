@@ -1,0 +1,35 @@
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+    <meta charset="UTF-8">
+    <title>Employees</title>
+    {% if result %}
+
+    <table id="employees" style="width:100%"><tbody><tr>
+
+        <th>Thumbnail</th>
+
+    </tr><tr>
+
+    {% for row in result %}
+
+<table id="employees" style="width:100%"><tbody><tr>
+
+        <td> <img src="data:image/PNG;base64,{{row.thumbnail|safe}}" width = "400", height = "300"></td>
+    </tr></tbody></table>
+
+    {% endfor %}
+
+    {% endif %}

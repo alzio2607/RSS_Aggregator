@@ -26,7 +26,7 @@ def get_graph(df):
         if x[0] != x[1]:
             graph[x[0]].append(x[1])
             graph[x[1]].append(x[0])
-    return graph
+    return graph,similarities
 
 def dfs(graph, node, visited, temp):
     visited[node] = True
@@ -46,6 +46,7 @@ def get_connected_components(graph):
             cc.append(temp)
     return cc
 
+
 def process_component(df):
     df['publish_ts'] = df['publish_ts'].astype(str)
     return dict(
@@ -54,6 +55,8 @@ def process_component(df):
         ids=','.join(df['id'].values),
         thumbnail=Thumbnail(df['thumbnail_link'].values).get_blob()
     )
+
+
 
 def get_clusters(components, df):
     chunks = []
@@ -68,10 +71,12 @@ def process_category(category):
     df = sql.read_latest_ts(category)
     print('read done')
     ts = df.iloc[0]['ts']
-    graph = get_graph(df)
+    graph,weights = get_graph(df)
     print('graph created')
     components = get_connected_components(graph)
     print('components identified')
+    graph = break_components(components,graph,weights)
+
     clusters = get_clusters(components, df)
     print('clusters made')
     clusterDf = pd.DataFrame(clusters)
