@@ -62,6 +62,7 @@ function getThumbnail(article) {
     thumbnail.width = 100
     thumbnail.height = 100
     imageWithLink.appendChild(thumbnail)
+    return imageWithLink
 }
 function getNewsBlock(news) {
     var table = document.createElement('table')
@@ -78,4 +79,4 @@ console.log(result.length)
 for (var i = 0; i < result.length; i++) {
     table.insertRow().insertCell().innerHTML = getNewsBlock(result[i]).outerHTML
 }
-document.getElementById('ContentBlock').innerHTML = outerHTML
+document.getElementById('ContentBlock').innerHTML = table.outerHTML
