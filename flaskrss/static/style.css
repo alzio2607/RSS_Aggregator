@@ -1,9 +1,129 @@
+.sidenav {
+    height: 100%;
+    width: 320px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:whitesmoke;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.rightnav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color:white;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 350px;
+    margin-right: 300px;
+}
+#CategoryTable {
+    align-self: center;
+}
 #CategoryBlock {
-    width: "200px";
+    margin:25px;
+    padding:25px;
+    width: 350px;
+    vertical-align: top;
+}
+#ContentTable {
+    scroll-behavior: smooth;
 }
 #ContentBlock {
-    width: "1600px";
+    width: 100%;
+    padding: 0px;
+    align-content: center;
 }
+
 #PluginBlock {
-    width: "200px";
+    margin: 30px;
+    padding: 50px;
+    width: 250px;
+    align-content: right;
+    align-self: right;
+    vertical-align: top;
+}
+.unselected_category, selected_category {
+    font-family: Bookman;
+    align-self: center;
+    font-weight: bolder;
+    font-size: 36px;
+    font-variant: small-caps;
+    padding-left: 10px;
+    margin: 20px;
+}
+.ThumbnailBlock {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    padding-top: 8px;
+    padding-bottom:20px;
+    padding-right: 0px;
+    vertical-align: top;
+    align-content: right;
+    align-self: right;
+    align-items: right;
+}
+.ArticleList {
+    list-style: circle;
+    list-style-type: circle;
+}
+.ArticlesBlock {
+    padding: 0px;
+    margin: 0px;
+}
+.SingleArticleBlock {
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+}
+.FirstArticleTitle {
+    color: black;
+    font-size: 20px;
+}
+.ArticleTitle{
+    color: black;
+    font-size: 16px;
+}
+.ArticleStamp {
+    color: lightslategray;
+    padding-left: 16px;
+    font-size: 14px;
+}
+table.NewsBlock {
+    width: 100%;
+    text-align: left;
+    align-self: center;
+    padding:20px;
+    margin:20px;
+    border-color: gray;
+    border-width: 1.5px;
+    border-style: solid;
+    border-radius: 25px;
+    border-collapse: separate;
+}
+table.MainTable {
+    width: 100%;
+}
+.ThumbnailBlock img {
+    border-radius: 15px;
 }

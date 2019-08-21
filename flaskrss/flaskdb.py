@@ -94,7 +94,7 @@ def get_sports_news():
 
 @app.route("/script.js")
 def script():
-    return render_template('script.js',result = final_json_list)
+    return render_template('script.js',result = final_json_list[:10])
 
 if __name__ == '__main__':
     app.run()
