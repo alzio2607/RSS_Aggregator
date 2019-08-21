@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15ae9c43-6796-45d7-8fad-ddac373e9cff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/flaskrss/static/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskrss/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/RSS_Aggregator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RSS_Aggregator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskrss/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskrss/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskrss/dbconnect.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskrss/dbconnect.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskrss/flaskdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskrss/flaskdb.py" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/flaskrss/templates/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/flaskrss/templates/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskrss/templates/sports.html" beforeDir="false" />
+>>>>>>> 059ff08afe127b84ad2d2458c0d514a742886a52
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,11 +30,6 @@
         <option value="Python Script" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>print</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,6 +52,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\keyur.ja\IdeaProjects\RSS_Aggregator\flaskrss\static" />
       <recent name="C:\Users\keyur.ja\IdeaProjects\RSS_Aggregator" />
       <recent name="C:\Users\keyur.ja\IdeaProjects\RSS_Aggregator\rssa" />
     </key>

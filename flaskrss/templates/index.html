@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+        <title>
+            News Aggregator
+        </title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <tc id="CategoryBlock"></tc>
+                <tc id="ContentBlock"></tc>
+                <tc id="PluginBlock"></tc>
+            </tr>
+        </table>
+        <script src="{{url_for ('script')}}"></script>
+    </body>
+</html>
