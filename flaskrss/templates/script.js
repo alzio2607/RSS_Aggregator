@@ -16,7 +16,7 @@ function getSingleArticle(article, first = false) {
     var row = table.insertRow()
     var cell = table.insertCell()
     var stamp = document.createElement('h5')
-    stamp.innerText = article.publisher + " ~ " + article.time
+    stamp.innerText = article.publisher + " ~ " + article.publish_ts
     cell.innerHTML = stamp.outerHTML
 
     //set class of article block
@@ -32,7 +32,7 @@ function getSingleArticle(article, first = false) {
     linkedTable.innerHTML = table.outerHTML
     return linkedTable
 }
-function getArticles(news) {
+function getArticles(article_list) {
     var table = document.createElement('table')
 
     //insert leader article
@@ -45,8 +45,8 @@ function getArticles(news) {
     var row = table.insertRow()
     var cell = table.insertCell()
     var list = document.createElement('ul')
-    for (var i = 1; i < news.length; i++) {
-        list.appendChild(getSingleArticle(news[i]))
+    for (var i = 1; i < article_list.length; i++) {
+        list.appendChild(getSingleArticle(article_list[i]))
     }
     cell.innerHTML = list.outerHTML
 
@@ -54,20 +54,20 @@ function getArticles(news) {
 }
 function getThumbnail(article) {
     var imageWithLink = document.createElement('a')
-    imageWithLink.href = article[0].link
+    imageWithLink.href = article['article_list'][0].link
     var thumbnail = document.createElement('img')
     thumbnail.src = "data:image/PNG;base64," + article.thumbnail
     thumbnail.width = 100
     thumbnail.height = 100
     imageWithLink.appendChild(thumbnail)
 }
-function getNewsBlock(article) {
+function getNewsBlock(news) {
     var table = document.createElement('table')
     var row = table.insertRow()
     var cell = row.insertCell()
-    cell.innerHTML = getArticles(article).outerHTML
+    cell.innerHTML = getArticles(news).outerHTML
     var cell = row.insertCell()
-    cell.innerHTML = getThumbnail(article).outerHTML
+    cell.innerHTML = getThumbnail(news['article_list']).outerHTML
     return table
 }
 var result = {{ result | safe }}
