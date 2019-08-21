@@ -2,6 +2,7 @@ console.log("This project sucks.")
 
 function getSingleArticle(article, first = false) {
     var linkedTable = document.createElement('a')
+    console.log(article)
     linkedTable.href = article.link
 
     //insert article title
@@ -14,7 +15,7 @@ function getSingleArticle(article, first = false) {
 
     //insert article stamp
     var row = table.insertRow()
-    var cell = table.insertCell()
+    var cell = row.insertCell()
     var stamp = document.createElement('h5')
     stamp.innerText = article.publisher + " ~ " + article.publish_ts
     cell.innerHTML = stamp.outerHTML
@@ -38,12 +39,13 @@ function getArticles(article_list) {
     //insert leader article
     var row = table.insertRow()
     var cell = row.insertCell()
-    cell.innerHTML = getSingleArticle(news[0]).outerHTML
+    console.log(article_list)
+    cell.innerHTML = getSingleArticle(article_list[0]).outerHTML
     
 
     //create an unordered list of follower articles
     var row = table.insertRow()
-    var cell = table.insertCell()
+    var cell = row.insertCell()
     var list = document.createElement('ul')
     for (var i = 1; i < article_list.length; i++) {
         list.appendChild(getSingleArticle(article_list[i]))
@@ -65,9 +67,9 @@ function getNewsBlock(news) {
     var table = document.createElement('table')
     var row = table.insertRow()
     var cell = row.insertCell()
-    cell.innerHTML = getArticles(news).outerHTML
+    cell.innerHTML = getArticles(news['article_list']).outerHTML
     var cell = row.insertCell()
-    cell.innerHTML = getThumbnail(news['article_list']).outerHTML
+    cell.innerHTML = getThumbnail(news).outerHTML
     return table
 }
 var result = {{ result | safe }}

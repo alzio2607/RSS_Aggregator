@@ -88,14 +88,7 @@ def get_sports_news():
         final_json_list.append(cluster_dict)
 
     #return jsonify(final_json_list)
-
-
-
-    #result = get_result_list(res)
-<<<<<<< HEAD
-=======
-    return render_template('index.html', result=final_json_list,category='sports', content_type='application/json')
->>>>>>> 059ff08afe127b84ad2d2458c0d514a742886a52
+    return render_template('index.html', result=final_json_list, category='sports', content_type='application/json')
 
 
 
