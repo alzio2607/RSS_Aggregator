@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ba4c2d58-5af2-4861-b424-bfb7ef089543" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dump_logos.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/MySQLdb/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/MySQLdb/_exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/MySQLdb/_mysql.cpython-37m-darwin.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/MySQLdb/compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/MySQLdb/connections.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/MySQLdb/constants/CLIENT.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/MySQLdb/constants/CR.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/MySQLdb/constants/ER.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/MySQLdb/constants/FIELD_TYPE.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/MySQLdb/constants/FLAG.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/MySQLdb/constants/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/MySQLdb/converters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/MySQLdb/cursors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/MySQLdb/release.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/MySQLdb/times.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/abstracts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/authentication.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/catch23.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/charsets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/connection_cext.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/conversion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/cursor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/cursor_cext.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/custom_types.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/dbapi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/django/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/django/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/django/client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/django/compiler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/django/creation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/django/features.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/django/introspection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/django/operations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/django/schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/django/validation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/errorcode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/errors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/fabric/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/fabric/balancing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/fabric/caching.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/fabric/connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/locales/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/locales/eng/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/locales/eng/client_error.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/network.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/optionfiles.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/pooling.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/protocol.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql/connector/version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql_connector-2.2.9.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql_connector-2.2.9.dist-info/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql_connector-2.2.9.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql_connector-2.2.9.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql_connector-2.2.9.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysql_connector-2.2.9.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlclient-1.4.4.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlclient-1.4.4.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlclient-1.4.4.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlclient-1.4.4.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlclient-1.4.4.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlclient-1.4.4.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/authentication.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/charsets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/crud.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/dbdoc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/errorcode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/errors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/expr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/expr_unparser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/locales/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/locales/eng/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/locales/eng/client_error.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/protobuf/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/protobuf/mysqlx_connection_pb2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/protobuf/mysqlx_crud_pb2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/protobuf/mysqlx_datatypes_pb2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/protobuf/mysqlx_expect_pb2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/protobuf/mysqlx_expr_pb2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/protobuf/mysqlx_notice_pb2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/protobuf/mysqlx_pb2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/protobuf/mysqlx_resultset_pb2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/protobuf/mysqlx_session_pb2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/protobuf/mysqlx_sql_pb2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/protobuf/t.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/protocol.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/result.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rssa/tens/lib/python3.7/site-packages/mysqlx/statement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rssa/content/Processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/../rssa/content/Processor.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1PgGq7a2odbx1gcCZxGq0iCGVhm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="dump_logos" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Logodump" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dump_logos.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.dump_logos" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ba4c2d58-5af2-4861-b424-bfb7ef089543" name="Default Changelist" comment="" />
+      <created>1566288513907</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566288513907</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

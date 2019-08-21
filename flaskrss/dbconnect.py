@@ -7,7 +7,7 @@ class Database:
         host = "127.0.0.1"
         user = "root"
         password = "Skenzo_Dev"
-        db = "Rss"
+        db = "rss"
         self.con = pymysql.connect(host=host, user=user, password=password, db=db, cursorclass=pymysql.cursors.
                                    DictCursor)
 

@@ -1,9 +1,11 @@
 
-from flask import Flask, render_template
+from flask import Flask, render_template,json,jsonify
 from flaskrss import Database
 from io import BytesIO
 from PIL import Image
 import base64
+from datetime import datetime
+
 
 
 app = Flask(__name__)
@@ -55,45 +57,42 @@ def get_sports_news():
 
     thumb_count = 0
     for cluster in ids_list:
-        top_key = cluster[0]
-        query = "SELECT title,summary FROM sports where id='" + top_key + "'"
-        cursor.execute(query)
-        result=cursor.fetchall()
-        for row in result:
-            row['thumbnail'] = str(thumb_list[thumb_count])
-            thumb_count+=1
-
-
-
-        links =[]
-        logos=[]
+        cluster_dict = {}
+        cluster_dict['thumbnail'] = str(thumb_list[thumb_count])
+        cluster_dict['article_list']=[]
+        thumb_count += 1
         for key in cluster:
-            query = "SELECT link,publisher FROM sports where id='" + key + "'"
+            query = "SELECT title,link,publisher,publish_ts FROM sports where id='" + key + "'"
             cursor.execute(query)
-            result1 = cursor.fetchall()
-            for row in result1:
-                links.append(row['link'])
-                publisher = row['publisher']
-                pub_blob = get_publisher_blob(publisher)
-                logos.append(get_image(pub_blob))
+            result=cursor.fetchall()
+            for row in result:
+                ts = row['publish_ts']
+                dt = datetime.strptime(ts, '%Y%m%d%H%M')
+                delta = datetime.now() - dt
+                days,seconds = delta.days,delta.seconds
+                if days:
+                    if days==1:
+                        row['publish_ts'] = str(days) + " day ago"
+                    elif days>1:
+                        row['publish_ts'] = str(days) + " days ago"
+                else:
+                    hours = seconds // 3600
+                    minutes = (seconds % 3600) // 60
+                    if hours:
+                        row['publish_ts'] = str(hours) + " hours ago"
+                    else:
+                        row['publish_ts'] = str(minutes) + " minutes ago"
 
-        for row in result:
-            row['links']= links
-            row['logos'] = logos
+            cluster_dict['article_list'].append(result[0])
 
-        if check:
-            check =0
+        final_json_list.append(cluster_dict)
 
-
-        final_json_list.append(result[0])
-
-
-    #return jsonify(final_json_list)
+    return jsonify(final_json_list)
 
 
 
     #result = get_result_list(res)
-    return render_template('sports.html', result=final_json_list, content_type='application/json')
+    #return render_template('sports.html', result=final_json_list,category='sports', content_type='application/json')
 
 
 
