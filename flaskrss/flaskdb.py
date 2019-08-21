@@ -42,7 +42,7 @@ def get_sports_news():
     check=1
     final_json_list=[]
     cursor = connection.cursor()
-    cursor.execute("SELECT ids,thumbnail FROM clusters WHERE category ='sports' and ts = (select max(ts) from clusters) ORDER BY publisher_count DESC ,publish_ts DESC LIMIT 9")
+    cursor.execute("SELECT ids,thumbnail FROM clusters WHERE category ='sports' and ts = (select max(ts) from clusters) ORDER BY publisher_count DESC ,publish_ts DESC LIMIT 100")
     res = cursor.fetchall()
     ids_list=[]
     thumb_list=[]
@@ -93,7 +93,7 @@ def get_sports_news():
 
 
     #result = get_result_list(res)
-    return render_template('sports.html', result=final_json_list, content_type='application/json')
+    return render_template('index.html', result=final_json_list, content_type='application/json')
 
 
 

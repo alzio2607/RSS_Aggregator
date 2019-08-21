@@ -1,63 +1,79 @@
-console.log("hello")
+console.log("This project sucks.")
 
-function insertIntoTable(table, value) {
-table.insertRow().insertCell().innerHTML = value.outerHTML
+function getSingleArticle(article, first = false) {
+    var linkedTable = document.createElement('a')
+    linkedTable.href = article.link
+
+    //insert article title
+    var table = document.createElement('table')
+    var row = table.insertRow()
+    var cell = row.insertCell()
+    var title = document.createElement('h2')
+    title.innerText = article.title
+    cell.innerHTML = title.outerHTML
+
+    //insert article stamp
+    var row = table.insertRow()
+    var cell = table.insertCell()
+    var stamp = document.createElement('h5')
+    stamp.innerText = article.publisher + " ~ " + article.time
+    cell.innerHTML = stamp.outerHTML
+
+    //set class of article block
+    if (first) {
+        title.className = "FirstArticleTitle"
+        stamp.className = "ArticleStamp"
+    }
+    else {
+        title.className = "ArticleTitle"
+        stamp.className = "ArticleStamp"
+    }
+
+    linkedTable.innerHTML = table.outerHTML
+    return linkedTable
 }
-function getArticle(article) {
-var table = document.createElement('table')
+function getArticles(news) {
+    var table = document.createElement('table')
 
-var thumbnail = document.createElement('img')
-thumbnail.src = "data:image/JPG;base64," + article.thumbnail
-insertIntoTable(table, thumbnail)
+    //insert leader article
+    var row = table.insertRow()
+    var cell = row.insertCell()
+    cell.innerHTML = getSingleArticle(news[0]).outerHTML
+    
 
-var title = document.createElement('h3')
-title.innerText = article.title
-insertIntoTable(table, title)
+    //create an unordered list of follower articles
+    var row = table.insertRow()
+    var cell = table.insertCell()
+    var list = document.createElement('ul')
+    for (var i = 1; i < news.length; i++) {
+        list.appendChild(getSingleArticle(news[i]))
+    }
+    cell.innerHTML = list.outerHTML
 
-var summary = document.createElement('p')
-summary.innerText = article.summary
-insertIntoTable(table, summary)
-return table
+    return table
 }
-function getLinks(article) {
-var table = document.createElement('table')
-
-var parity = 0
-var currentRow = null
-for (var i = 0; i < article.links.length; i++) {
-if (parity == 0) {
-currentRow = table.insertRow()
+function getThumbnail(article) {
+    var imageWithLink = document.createElement('a')
+    imageWithLink.href = article[0].link
+    var thumbnail = document.createElement('img')
+    thumbnail.src = "data:image/PNG;base64," + article.thumbnail
+    thumbnail.width = 100
+    thumbnail.height = 100
+    imageWithLink.appendChild(thumbnail)
 }
-var currentCell = currentRow.insertCell()
-var imageLink = document.createElement('a')
-imageLink.href = article.links[i]
-
-var image = new Image()
-image.src = "data:image/PNG;base64," + article.logos[i]
-image.width = 50
-image.height= 50
-
-imageLink.appendChild(image)
-currentCell.innerHTML = imageLink.outerHTML
-parity = parity ^ 1
-}
-
-return table
-}
-function getArticleBlock(article) {
-var table = document.createElement('table')
-var row = table.insertRow()
-row.insertCell().innerHTML = getArticle(article).outerHTML
-row.insertCell().innerHTML = getLinks(article).outerHTML
-return table
+function getNewsBlock(article) {
+    var table = document.createElement('table')
+    var row = table.insertRow()
+    var cell = row.insertCell()
+    cell.innerHTML = getArticles(article).outerHTML
+    var cell = row.insertCell()
+    cell.innerHTML = getThumbnail(article).outerHTML
+    return table
 }
 var result = {{ result | safe }}
 var table = document.createElement('table')
-for (var i = 0; i < 3; i++) {
-var row = table.insertRow()
-for (var j = 0; j < 3; j++) {
-var idx = i * 3 + j
-row.insertCell().innerHTML = getArticleBlock(result[idx]).outerHTML
+console.log(result.length)
+for (var i = 0; i < result.length; i++) {
+    table.insertRow().insertCell().innerHTML = getNewsBlock(result[i]).outerHTML
 }
-}
-document.getElementsByTagName('body')[0].appendChild(table)
+document.getElementById('ContentBlock').innerHTML = outerHTML
