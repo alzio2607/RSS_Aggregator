@@ -25,6 +25,20 @@
     overflow-x: hidden;
     padding-top: 20px;
 }
+.rightnavdown {
+    height: 100%;
+    width: 300px;
+    margin-left: 20px;
+    align-content: left;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color:white;
+    overflow-x: hidden;
+    padding-top: 100px;
+    border-radius: 15px;
+}
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -37,12 +51,14 @@
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: lightcoral;
+    color: black;
     display: block;
 }
 .selected_category {
     color: white;
-    background-color: coral;
+    background-color: lightseagreen;
+    border-radius: 25px;
+
 }
 .main {
     margin-left: 350px;
@@ -74,7 +90,7 @@
     align-self: right;
     vertical-align: top;
 }
-.unselected_category, selected_category {
+.unselected_category, .selected_category {
     font-family: Bookman;
     align-self: center;
     font-weight: bolder;

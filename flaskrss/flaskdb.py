@@ -95,7 +95,7 @@ def sports():
     global result,category
     result = get_result("sports")
     category='sports'
-    return render_template('index.html',category='sports',content_type='application/json')
+    return render_template('index.html',result = result,category='sports',content_type='application/json')
 
 
 @app.route('/business')
@@ -103,7 +103,7 @@ def business():
     global result,category
     category='business'
     result = get_result("business")
-    return render_template('index.html',category='business',content_type='application/json')
+    return render_template('index.html',result=result,category='business',content_type='application/json')
 
 
 @app.route('/technology')
@@ -111,7 +111,7 @@ def technology():
     global result,category
     result = get_result("technology")
     category='technology'
-    return render_template('index.html',category='technology',content_type='application/json')
+    return render_template('index.html',result=result,category='technology',content_type='application/json')
 
 
 
@@ -120,7 +120,7 @@ def health():
     global result,category
     category='health'
     result = get_result("health")
-    return render_template('index.html',category='health',content_type='application/json')
+    return render_template('index.html',result=result,category='health',content_type='application/json')
 
 
 @app.route('/science')
@@ -128,7 +128,7 @@ def science():
     global result,category
     category='science'
     result = get_result("science")
-    return render_template('index.html',category='science',content_type='application/json')\
+    return render_template('index.html',result=result,category='science',content_type='application/json')\
 
 
 @app.route('/world')
@@ -136,7 +136,7 @@ def world():
     global result,category
     category='world'
     result = get_result("world")
-    return render_template('index.html',content_type='application/json')
+    return render_template('index.html',result=result,category='world',content_type='application/json')
 
 @app.route('/home')
 def home():
@@ -145,34 +145,22 @@ def home():
     result = get_result("trending")
     print('result received')
     print(len(result))
-    return render_template('index.html',content_type='application/json')
+    return render_template('index.html',result=result,category='trending',content_type='application/json')
 
 @app.route('/')
 def trending():
     global result,category
     category='trending'
     result = get_result("trending")
-    return render_template('index.html',content_type='application/json')
+    return render_template('index.html',result=result,category='trending',content_type='application/json')
 
 @app.route('/entertainment')
 def entertainment():
     global result,category
-    category='entertainment'
+    category = 'entertainment'
     result = get_result("entertainment")
-    return render_template('index.html',content_type='application/json')
+    return render_template('index.html',result=result,category='entertainment',content_type='application/json')
 
-
-
-@app.route("/script.js")
-def script():
-    global result,category
-    print(category)
-    print('result size : {}'.format(len(result)))
-    print('sample result : ')
-    print(result[0]['thumbnail'])
-    print(result[0]['article_list'][0])
-
-    return render_template('script.js',result=result,category=category)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,host = '0.0.0.0')

@@ -42,7 +42,7 @@ function getArticles(article_list, index) {
 
     //create an unordered list of follower articles
     var seeMore = document.createElement('a')
-    seeMore.innerText = "See More"
+    seeMore.innerText = "Expand"
     seeMore.className = "SeeMore"
     seeMore.href = "#NewsBlock" + String(index)
     seeMore.setAttribute("data-toggle", "collapse")
@@ -100,16 +100,18 @@ function Main(result, category) {
         row.insertCell().innerHTML = getNewsBlock(result[i], i).outerHTML
     }
     seeMores = document.getElementsByClassName('SeeMore')
-    seeMores.array.forEach(element => {
-        element.onclick - handleClick;
+    Array.prototype.forEach.call(seeMores, element => {
+    console.log(element)
+        element.onclick = handleClick;
+
     });
-    document.getElementById(category).className = "selected_category"
+
+    category.className= "selected_category"
+    category.setAttribute('href',category.getAttribute('href') + '#!')
 }
 function handleClick() {
-    this.value = (this.value == 'See More') ? 'See Less' : 'See More'
+    this.innerText= (this.innerText == 'Expand') ? 'Collapse' : 'Expand'
 }
-console.log('loading result')
-var result = {{ result | safe }}
-var category = {{ category | safe }}
-console.log('result loaded')
-Main(result)
+
+console.log(category)
+Main(result,category)
