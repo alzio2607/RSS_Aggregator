@@ -13,25 +13,60 @@
                     <td><img src="{{url_for('static',filename='medianetlogo.png')}}" width=320 height=100></td>
                 </tr>
                 <tr>
-                    <td><div class="unselected_category">Trending</div></td>
+                    <td>
+                        <a href="{{ url_for('home') }}" class="unselected_category" id="trending">
+                            Trending
+                        </a>
+                    </td>
                 </tr>
                 <tr>
-                    <td><div class="unselected_category">World News</div></td>
+                    <td>
+                        <a href="{{ url_for('world') }}" class="unselected_category" id="world">
+                            World News
+                        </a>
+                    </td>
                 </tr>
                 <tr>
-                    <td><div class="unselected_category">Business</div></td>
+                    <td>
+                        <a href="{{ url_for('business') }}" class="unselected_category" id="business">
+                            Business
+                        </a>
+                    </td>
                 </tr>
                 <tr>
-                    <td><div class="unselected_category">Sports</div></td>
+                    <td>
+                        <a href="{{ url_for('sports') }}" class="unselected_category" id="sports">
+                            Sports
+                        </a>
+                    </td>
                 </tr>
                 <tr>
-                    <td><div class="unselected_category">Entertainment</div></td>
+                    <td>
+                        <a href="{{ url_for('entertainment') }}" class="unselected_category" id="entertainment">
+                            Entertainment
+                        </a>
+                    </td>
                 </tr>
                 <tr>
-                    <td><div class="unselected_category">Technology</div></td>
+                    <td>
+                        <a href="{{ url_for('technology') }}" class="unselected_category" id="technology">
+                            Technology
+                        </a>
+                    </td>
                 </tr>
                 <tr>
-                    <td><div class="unselected_category">Science</div></td>
+                    <td>
+                        <a href="{{ url_for('science') }}" class="unselected_category" id="science">
+                            Science
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="{{ url_for('health') }}" class="unselected_category" id="health">
+                            Health
+                        </a>
+                    </td>
                 </tr>
             </table>
         </div>

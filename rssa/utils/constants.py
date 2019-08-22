@@ -8,6 +8,7 @@ CATEGORIES = ["business", "technology", "sports", "science", "health", "world", 
 USE_MODEL_PATH = "C:\\Users\\keyur.ja\\IdeaProjects\\RSS_Aggregator\\use_model\\"
 
 SIMILARITY_THRESHOLD = 0.80
+MAXIMUM_CLUSTER_SIZE = 15
 MINIMUM_CHARACTER_THRESHOLD = 15
 MAXIMUM_CHARACTER_THRESHOLD = 300
 

@@ -9,9 +9,14 @@
     overflow-x: hidden;
     padding-top: 20px;
 }
+#m-booked-bl-simple-week-vertical-99921 {
+    align-self: left;
+}
 .rightnav {
     height: 100%;
-    width: 250px;
+    width: 300px;
+    margin-right: 0px;
+    align-content: left;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -29,12 +34,19 @@
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: lightcoral;
+    display: block;
 }
-
+.selected_category {
+    color: white;
+    background-color: coral;
+}
 .main {
     margin-left: 350px;
-    margin-right: 300px;
+    margin-right: 350px;
 }
 #CategoryTable {
     align-self: center;

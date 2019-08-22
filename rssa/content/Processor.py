@@ -2,12 +2,14 @@ from itertools import repeat
 
 from rssa.dal import MySql, Thumbnail
 from rssa.utils.constants import *
+from rssa.utils import DSU
 import tensorflow as tf
 import tensorflow_hub as hub
 from sklearn.metrics.pairwise import cosine_similarity as cos_sim
 import numpy as np
 import pandas as pd
 from multiprocessing import Pool
+from operator import itemgetter
 def get_graph(df):
     embeddings = None
     use_module = hub.Module(USE_MODEL_PATH)
@@ -21,12 +23,9 @@ def get_graph(df):
         embeddings = sess.run(embeddings_tf)
     similarities = cos_sim(embeddings)
     edges = np.argwhere(similarities >= SIMILARITY_THRESHOLD)
-    graph = {i:[] for i in range(len(df))}
-    for x in edges:
-        if x[0] != x[1]:
-            graph[x[0]].append(x[1])
-            graph[x[1]].append(x[0])
-    return graph,similarities
+    weights = [(u,v,similarities[u,v]) for u,v in edges]
+    weights.sort(key = itemgetter(2), reverse=True)
+    return weights
 
 def dfs(graph, node, visited, temp):
     visited[node] = True
@@ -35,17 +34,12 @@ def dfs(graph, node, visited, temp):
         if visited[next] == False:
             dfs(graph, next, visited, temp)
 
-def get_connected_components(graph):
-    n = len(graph)
-    visited = [False] * n
-    cc = []
-    for node in range(n):
-        if visited[node] == False:
-            temp = []
-            dfs(graph, node, visited, temp)
-            cc.append(temp)
-    return cc
-
+def get_connected_components(weights, n):
+    dsu = DSU(n)
+    for u,v,w in weights:
+        if dsu.size(u) + dsu.size(v) <= MAXIMUM_CLUSTER_SIZE:
+            dsu.connect(u, v)
+    return dsu.get_components()
 
 def process_component(df):
     df['publish_ts'] = df['publish_ts'].astype(str)
@@ -53,10 +47,8 @@ def process_component(df):
         publish_ts=df['publish_ts'].min(),
         publisher_count=len(df),
         ids=','.join(df['id'].values),
-        thumbnail=Thumbnail(df['thumbnail_link'].values).get_blob()
+        thumbnail=Thumbnail(df['thumbnail_link'].values, df.iloc[0]['title']).get_blob()
     )
-
-
 
 def get_clusters(components, df):
     chunks = []
@@ -71,12 +63,10 @@ def process_category(category):
     df = sql.read_latest_ts(category)
     print('read done')
     ts = df.iloc[0]['ts']
-    graph,weights = get_graph(df)
+    weights = get_graph(df)
     print('graph created')
-    components = get_connected_components(graph)
+    components = get_connected_components(weights, len(df))
     print('components identified')
-    graph = break_components(components,graph,weights)
-
     clusters = get_clusters(components, df)
     print('clusters made')
     clusterDf = pd.DataFrame(clusters)

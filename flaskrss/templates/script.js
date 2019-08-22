@@ -91,11 +91,25 @@ function getNewsBlock(news, index) {
     cell.setAttribute("width", "20%")
     return table
 }
-var result = {{ result | safe }}
-var table = document.getElementById('ContentTable')
-table.setAttribute("display", "block")
-for (var i = 0; i < result.length; i++) {
-    var row = table.insertRow()
-    row.setAttribute("display", "block")
-    row.insertCell().innerHTML = getNewsBlock(result[i], i).outerHTML
+function Main(result, category) {
+    var table = document.getElementById('ContentTable')
+    table.setAttribute("display", "block")
+    for (var i = 0; i < result.length; i++) {
+        var row = table.insertRow()
+        row.setAttribute("display", "block")
+        row.insertCell().innerHTML = getNewsBlock(result[i], i).outerHTML
+    }
+    seeMores = document.getElementsByClassName('SeeMore')
+    seeMores.array.forEach(element => {
+        element.onclick - handleClick;
+    });
+    document.getElementById(category).className = "selected_category"
 }
+function handleClick() {
+    this.value = (this.value == 'See More') ? 'See Less' : 'See More'
+}
+console.log('loading result')
+var result = {{ result | safe }}
+var category = {{ category | safe }}
+console.log('result loaded')
+Main(result)
